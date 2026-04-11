@@ -14,7 +14,7 @@
       <h2>Check-in</h2>
       <h3>April 9, 2026</h3>
       <hr>
-      <section id="table of contents">
+      <section id="table_of_contents">
         <h2>Table of Contents</h2>
         <nav aria-label="Nav table">
           <ol>
@@ -70,7 +70,7 @@
           <p>Meeting held in Conference Room A at 10:00 AM.</p>
         </div>
         <div>
-          <img src="business meeting stock.jpg" width="300" height="200" alt="Meeting info graphic">
+          <img src="business-meeting-stock.jpg" width="300" height="200" alt="Meeting info graphic">
         </div>
         <br>
         <div>
@@ -82,37 +82,39 @@
         <br>
         <div>
           <audio controls>
-            <source src="Star Wars - Cantina Song.mp3" type="audio/mpeg">
+            <source src="Star_wars_cantina.mp3" type="audio/mpeg">
             Your browser does <span>not</span> support the audio element.
           </audio>
         </div>
       </section>
-      <section id="questions">
+      <section id="form">
         <h2>Any questions or concerns?</h2>
         <form onsubmit="alert('We will get back to you soon'); return false;">
           <fieldset>
             <legend>Questions</legend>
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Name"/>
+            <input type="text" id="name" placeholder="Name">
             <br><br>
             <label for="date">Date:</label>
-            <input type="date" id="date" placeholder="Date"/>
+            <input type="date" id="date">
             <br><br>
             <label for="checkbox">Alive?</label>
-            <input type="checkbox" id="checkbox" name="checkbox"/>
+            <input type="checkbox" id="checkbox" name="checkbox">
             <br><br>
-            <label for="radio">Is this a dumb question?</label>
-            <input type="radio" id="radio1" name="radio" value="yes"/>
-            <label for="radio1">Yes</label>
-            <input type="radio" id="radio2" name="radio" value="no"/>
-            <label for="radio2">No</label>
+            <label for="radio_box">Is this a dumb question?</label>
+            <section id="radio_box">
+              <input type="radio" id="radio1" name="radio" value="yes">
+              <label for="radio1">Yes</label>
+              <input type="radio" id="radio2" name="radio" value="no">
+              <label for="radio2">No</label>
+              </section>
             <br><br>
-            <label for="questions">Questions or concerns</label>
+            <label for="comments">Questions or concerns</label>
             <br>
             <textarea id="comments" placeholder="Comments"></textarea>
             <br><br>
             <label for="department">Department:</label>
-            <input list="departments" id="department" name="department" placeholder="Department"/>
+            <input list="departments" id="department" name="department" placeholder="Department">
             <datalist id="departments">
               <option value="Sales">
               <option value="Marketing">
