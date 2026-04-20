@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pomodoro Timer First Brainstorm</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Meeting Minutes</h1>
+      </header>
+      <h2>Check-in</h2>
+      <h3>April 9, 2026</h3>
+      <hr>
+      <section id="table of contents">
+        <h2>Table of Contents</h2>
+        <nav aria-label="Nav table">
+          <ol>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#unfinished">Unfinished Business</a></li>
+            <li><a href="#new">New Business</a></li>
+            <li><a href="#questions">Questions/Concerns</a></li>
+            <li><a href="#meeting-info">Meeting info</a></li>
+          </ol>
+        </nav>
+      </section>
+      <h2 id="attendance">Attendance:</h2>
+      <ul>
+        <li>John Doe</li>
+        <li>Jane Smith</li>
+        <li>Emily Davis</li>
+        <li>Michael Brown</li>
+        <li><s>Sarah Wilson</s></li>
+      </ul>
+      <h2 id="agenda">Agenda:</h2>
+      <ol>
+        <li><strong>Review</strong> of <i>previous</i> meeting minutes</li>
+        <li>Discussion on project timeline</li>
+        <li>Budget allocation for next quarter</li>
+        <li>Team building activities</li>
+      </ol>
+      <h2 id="unfinished">Unfinished business:</h2>
+      <ul>
+        <li><b>Finalize</b> project timeline</li>
+        <li><em>Approve</em> budget allocation</li>
+      </ul>
+      <h2 id="new">New business:</h2>
+      <ul>
+        <li>Plan team building activities</li>
+        <li>Discuss potential new projects</li>
+      </ul>
+      <h2 id="questions">Questions/Concerns?</h2>
+      <details>
+        <summary>Q: How much wood could a woodchuck chuck if a woodchuck could chuck wood?</summary>
+          <p>Prolly not that much</p>
+      </details>
+      <br>
+      <details>
+        <summary>Follow up: Why did the chicken cross the road?</summary>
+          <p>To get to the other side</p>
+      </details>
+      <br>
+      <hr>
+      <section id="meeting-info">
+        <div>
+          <h2>Meeting info</h2>
+          <p>Meeting held in Conference Room A at 10:00 AM.</p>
+        </div>
+        <div>
+          <img src="business meeting stock.jpg" width="300" height="200" alt="Meeting info graphic">
+        </div>
+        <br>
+        <div>
+          <video width="300" height="200" controls>
+           <source src="IMG_5558.mp4" type="video/mp4">
+           Your browser does not support the video element.
+          </video>
+        </div>
+        <br>
+        <div>
+          <audio controls>
+            <source src="Star Wars - Cantina Song.mp3" type="audio/mpeg">
+            Your browser does <span>not</span> support the audio element.
+          </audio>
+        </div>
+      </section>
+      <section id="questions">
+        <h2>Any questions or concerns?</h2>
+        <form onsubmit="alert('We will get back to you soon'); return false;">
+          <fieldset>
+            <legend>Questions</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name"/>
+            <br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" placeholder="Date"/>
+            <br><br>
+            <label for="checkbox">Alive?</label>
+            <input type="checkbox" id="checkbox" name="checkbox"/>
+            <br><br>
+            <label for="radio">Is this a dumb question?</label>
+            <input type="radio" id="radio1" name="radio" value="yes"/>
+            <label for="radio1">Yes</label>
+            <input type="radio" id="radio2" name="radio" value="no"/>
+            <label for="radio2">No</label>
+            <br><br>
+            <label for="questions">Questions or concerns</label>
+            <br>
+            <textarea id="comments" placeholder="Comments"></textarea>
+            <br><br>
+            <label for="department">Department:</label>
+            <input list="departments" id="department" name="department" placeholder="Department"/>
+            <datalist id="departments">
+              <option value="Sales">
+              <option value="Marketing">
+              <option value="Engineering">
+              <option value="HR">
+            </datalist>
+            <br><br>
+            <select id="priority" name="priority">
+              <option value="">Select question priority</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+            <br><br>
+            <button>Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <footer>
+        <p>Meeting minutes prepared by John Doe™</p>
+      </footer>
+    </main>
+  </body>
+</html>
