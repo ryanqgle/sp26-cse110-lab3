@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'play';
+    src: url("fonts/PlaywriteNO-VariableFont_wght.ttf") format("truetype");
+    font-weight: "regular";
+    font-style: normal;
+}
+
+* {
+    color: blue;
+}
+
+/* Sets the background color to light blue, applies the Arial font, and uses flexbox to arrange elements in a column. */
+body {
+    background-color: lightblue; /* fallback background color for browsers that do not support oklch */
+    background-color: oklch(74.937% 0.10075 246.375); /* modern color spec */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sets the color of the main header to a specific shade of blue and centers the text. */
+h1 {
+    color: rgb(92, 92, 182);
+    text-align: center;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 2vh;
+    display: block;
+    font-family: 'play'
+}
+
+/* Sets the color of the subheaders to dark red and adds a left margin of 20 pixels. */
+h2 {
+    color: lab(28.08% 51.01 41.29);
+    margin-left: 20px;
+}
+
+nav {
+    color: hsl(120, 100%, 25%);
+    text-decoration: none;
+}
+
+a {
+    color: color(display-p3 1 1 0.5);
+    text-decoration: none;
+    margin-left: .2in;
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: color(display-p3 1 0.5 0.5);
+        font-size: 1.05em;
+    }
+}
+
+a:active {
+    color: color(display-p3 0.5 1 0.5);
+    font-size: 1.1em;
+}
+
+ul li {
+    color: color-mix(in srgb, red 50%, blue);
+}
+
+textarea {
+    margin: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
+    border-top: 2px solid black;
+    border-left: 2px dashed green;
+    border-right: 4px double blue;
+    border-bottom: 1px groove red;
+    border-radius: 5px;
+    min-width: 50%;
+    height: 100px;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .media-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+}
+
+@media (width > 768px) {
+    .media-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+#agenda {
+    color: hsl(240, 100%, 25%);
+}
+
+a[href="#unfinished"] {
+    color: hsl(0, 100%, 25%);
+    text-decoration: underline;
+}
+
+h2, a[href="#unfinished"] {
+    font-family: 'play';
+}
+
+section > h2 {
+    font-family: 'sans-serif';
+    font-size: 2em;
+}
+
+h2 ~ ol {
+    font-size: 25px;
+}
+
+h2 + details {
+    font-family: 'play';
+    font-size: 1.2em;
+}
+
+section.form-section {
+    background-color: rgb(206, 170, 252);
+}
+
+legend:has(+label) {
+    font-family: 'play';
+    font-size: 1.5em;
+    color: hsl(300, 100%, 25%);
+}
+
+details {
+    font-family: 'play';
+    font-size: 1.2em;
+    color: hsl(104, 59%, 40%);
+    & p {
+        color: hsl(104, 85%, 23%);
+        font-size: 1.2em;
+    }
+}
