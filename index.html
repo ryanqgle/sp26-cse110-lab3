@@ -2,17 +2,25 @@
 <html lang="en">
   <head>
     <title>Pomodoro Timer First Brainstorm</title>
-    <link rel="icon" type="image/x-icon" href="dog.ico">
+    <link rel="icon" type="image/x-icon" href="src/dog.ico">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
-      <header>
+      <header style="font-family: Playwrite NO">
         <h1>Meeting Minutes</h1>
       </header>
-      <h2>Check-in</h2>
-      <h3>April 9, 2026</h3>
+
+      <h3 style="color: #8b0000; display: flex; width: 100vw; height: 2em; position: relative;">
+        <p style="position: absolute; right: 2%;">April 9, 2026</p>
+        <p style="position: absolute; left: 0;">Meeting Type: Check-in</p>
+      </h3>
+
       <hr>
       <section id="table_of_contents">
         <h2>Table of Contents</h2>
@@ -69,31 +77,27 @@
           <h2>Meeting info</h2>
           <p>Meeting held in Conference Room A at 10:00 AM.</p>
         </div>
-        <div>
-          <img src="business-meeting-stock.jpg" width="300" height="200" alt="Meeting info graphic">
-        </div>
         <br>
-        <div>
+        <div class="media-container">
+          <img src="src/business-meeting-stock.jpg" width="300em" height="200em" alt="Meeting info graphic">
           <video width="300" height="200" controls>
-           <source src="IMG_5558.mp4" type="video/mp4">
+           <source src="src/IMG_5558.mp4" type="video/mp4">
            Your browser does not support the video element.
           </video>
-        </div>
-        <br>
-        <div>
           <audio controls>
-            <source src="Star_wars_cantina.mp3" type="audio/mpeg">
+            <source src="src/Star_wars_cantina.mp3" type="audio/mpeg">
             Your browser does <span>not</span> support the audio element.
           </audio>
         </div>
+        <br>
       </section>
-      <section id="form">
+      <section class="form-section" style="margin-bottom: 2pc;" id="form">
         <h2>Any questions or concerns?</h2>
         <form onsubmit="alert('We will get back to you soon'); return false;">
           <fieldset>
             <legend>Questions</legend>
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="name" placeholder="Name" style="width: 50%; border-style: dashed; border-color: #8b0000; border-width: 2px; border-radius: 5px;">
             <br><br>
             <label for="date">Date:</label>
             <input type="date" id="date">
@@ -133,7 +137,7 @@
           </fieldset>
         </form>
       </section>
-      <footer>
+      <footer style="position: flex; margin-right: 90%; display: inline;"> <!-- can bypass margins with inline display -->
         <p>Meeting minutes prepared by John Doe™</p>
       </footer>
     </main>
