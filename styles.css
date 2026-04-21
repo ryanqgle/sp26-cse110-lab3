@@ -42,20 +42,20 @@ nav {
 }
 
 a {
-    color: color(1 1 0.5);
+    color: color(display-p3 1 1 0.5);
     text-decoration: none;
     margin-left: .2in;
 }
 
 @media (hover: hover) {
     a:hover {
-        color: color(1 0.5 0.5);
+        color: color(display-p3 1 0.5 0.5);
         font-size: 1.05em;
     }
 }
 
 a:active {
-    color: color(0.5 1 0.5);
+    color: color(display-p3 0.5 1 0.5);
     font-size: 1.1em;
 }
 
